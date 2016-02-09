@@ -1,0 +1,56 @@
+{
+    "Substrates":[
+        {"name":"chorismate","concentration":100,"supplyRate":0.1},
+        {"name":"prephenate","concentration":50,"supplyRate":0},
+        {"name":"phenylpyruvate","concentration":70},
+        {"name":"phenylalanine"}
+    ],
+    "Enzymes":[
+        {"name":"PheA","concentration":10},
+        {"name":"TyrB","concentration":20}
+    ],
+    "ESComplexes":[
+    {
+        "name":"[PheA chorismate]",
+        "enzyme_name":"PheA",
+        "substrate_name":"chorismate",
+        "product_name":"[PheA prephenate] EP",
+        "bindRate":1,"unbindRate":0.1,"reactRate":0.005,"reverseRate":0.0005,"freeEnergyDelta":70
+    },
+    {
+        "name":"[PheA prephenate] EP",
+        "enzyme_name":"PheA",
+        "substrate_name":"prephenate",
+        "product_name":null,
+        "bindRate":0.5,"unbindRate":0.05,"reactRate":0.005,"reverseRate":0.0005,"freeEnergyDelta":0
+    },
+    {
+        "name":"[PheA prephenate] ES",
+        "enzyme_name":"PheA",
+        "substrate_name":"prephenate",
+        "product_name":"[PheA phenylpyruvate]",
+        "bindRate":0.5,"unbindRate":0.05,"reactRate":0.005,"reverseRate":0.0005,"freeEnergyDelta":26
+    },
+    {
+        "name":"[PheA phenylpyruvate]",
+        "enzyme_name":"PheA",
+        "substrate_name":"phenylpyruvate",
+        "product_name":null,
+        "bindRate":0.5,"unbindRate":0.05,"reactRate":0.005,"reverseRate":0.0005,"freeEnergyDelta":0
+    },
+    {
+        "name":"[TyrB phenylpyruvate]",
+        "enzyme_name":"TyrB",
+        "substrate_name":"phenylpyruvate",
+        "product_name":"[TyrB phenylalanine]",
+        "bindRate":0.5,"unbindRate":0.05,"reactRate":0.005,"reverseRate":0.0005,"freeEnergyDelta":0.5
+    },
+    {
+        "name":"[TyrB phenylalanine]",
+        "enzyme_name":"TyrB",
+        "substrate_name":"phenylalanine",
+        "product_name":null,
+        "bindRate":0.5,"unbindRate":0.05,"reactRate":0.005,"reverseRate":0.0005,"freeEnergyDelta":0
+    }
+    ]
+}

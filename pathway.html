@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>phenylalanine pathway</title>
+        <link rel="stylesheet" href="demo.css" media="screen">
+        <!--link rel="stylesheet" href="demo-print.css" media="print"-->
+        <script src="raphael.js"></script>
+        <script src="pathway.js"></script>
+    </head>
+    <body>
+        <div id="form">
+            <select id="easingx">
+                <option value="">Linear</option>
+                <option value=">">Ease In</option>
+                <option value="<">Ease Out</option>
+                <option value="<>">Ease In and Out</option>
+                <option value="bounce">Bounce</option>
+                <option value="elastic">Elastic</option>
+                <option value="backIn">Back In</option>
+                <option value="backOut">Back Out</option>
+            </select>
+            <button id="run">Run</button>
+        </div>
+        <div id="holder"></div>
+        <p id="copy">Demo of <a href="http://raphaeljs.com/">Raphaël</a>—JavaScript Vector Library</p>
+    </body>
+</html>
